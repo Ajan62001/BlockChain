@@ -1,4 +1,4 @@
-		#BlockChain Creation
+#	BlockChain Creation
 
 1) Initialize BlockChain
 2) Create A New Block Method
@@ -10,7 +10,7 @@ _____________________________________________
 
 
 
-1) 		## Initialize BlockChain
+## 1. Initialize BlockChain
 
 		* Block Chain is a group of blocks.
 		* Block is a group of transaction.
@@ -20,7 +20,7 @@ _____________________________________________
 
 ---------------------------------------------------------------------------
 
-2) 		## Create A New Block Method
+## 2. Create A New Block Method
 
 		* A block should have some properties
 			* Index
@@ -36,14 +36,13 @@ _____________________________________________
 
 ----------------------------------------------------------------------------------
 
-
-3) 		## Get Last Block Method
+## 	3. Get Last Block Method
 
 		* Return the last block in Chain
 
 ------------------------------------------------
 
-4) 		## Create A New Transaction Method
+## 4. Create A New Transaction Method
 
 		* A Transaction have some attributes
 			* Sender
@@ -54,5 +53,5 @@ _____________________________________________
 		* Return Block index in which transaction will reside
 ----------------------------------------------------
 
-5) 		## Hash Block Method
+## 5. Hash Block Method
 ------------------------------
