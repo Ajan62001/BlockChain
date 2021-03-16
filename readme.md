@@ -10,17 +10,17 @@ _____________________________________________
 
 
 
-1) 		##Initialize BlockChain
+1) 		## Initialize BlockChain
 
 		* Block Chain is a group of blocks.
 		* Block is a group of transaction.
 		* So block chain has Blocks (containing transactions) and pending transactions those are not in block(will be in a Block in future)
-		
+
 		Every BlockChain will be initialized as Chain and pending Transactions
 
 ---------------------------------------------------------------------------
 
-2) 		##Create A New Block Method
+2) 		## Create A New Block Method
 
 		* A block should have some properties
 			* Index
@@ -37,13 +37,13 @@ _____________________________________________
 ----------------------------------------------------------------------------------
 
 
-3) 		##Get Last Block Method
+3) 		## Get Last Block Method
 
 		* Return the last block in Chain
 
 ------------------------------------------------
 
-4) 		##Create A New Transaction Method
+4) 		## Create A New Transaction Method
 
 		* A Transaction have some attributes
 			* Sender
