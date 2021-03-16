@@ -1,3 +1,4 @@
+const sha256 = require('sha256');
 //creating a Block Chain for practice
 
 // Initialize Function
@@ -73,5 +74,36 @@ BlockChain.prototype.createNewTransaction = function(amount , sender , reciever)
 	return this.getLastBlock()['index'] + 1;
 }
 
+/* ## 5. Hash Block Method
+
+Hash Block is created with the help of SHA-256. It take an input string.
+String = previousBlockHash + Block data + nonce
+Block data is an object so it is stringify by JSON
+convert nonce in string
+*/
+
+BlockChain.prototype.hashBlock = function(previousBlockHash , blockData , nonce){
+		const	dataAsString = previousBlockHash + JSON.stringify(blockData) + nonce.toString();
+		const	hash 	= 	sha256(dataAsString);
+		return 	hash;
+}
+
+/*
+## 6. Proof Of Work
+> Input :- (previousBlockHash , CurrentBlockData)
+we found a nonce such that generated hash starts with 0000.
+It takes a lot of computing power.
+* returns nonce
+*/
+
+BlockChain.prototype.proofOfWork = function(previousBlockHash, currentBlockData ){
+		let	nonce = 0;
+		let hash = this.hashBlock(previousBlockHash, currentBlockData, nonce);
+		while(hash.substring(0,4) != '0000'){
+			nonce++;
+			hash = this.hashBlock(previousBlockHash, currentBlockData, nonce);
+		}
+		return nonce;
+}
 
 module.exports = BlockChain;

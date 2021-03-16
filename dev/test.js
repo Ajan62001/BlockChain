@@ -3,5 +3,5 @@
  const bitcoin = new BlockChain();
 bitcoin.createNewBlock(1225,'dfjghadhjbkgbkbgh','hsdfjaghagjkdfgjkd');
 bitcoin.createNewTransaction(100 , 'SDLFSFSJFDSJGSJLGJS0' , 'AJDOSAGJOAGJAJDGA');
-
- console.log(bitcoin.pendingTransactions);
+let blockData = bitcoin.pendingTransactions;
+ console.log(bitcoin.proofOfWork('SADNJLGNASJGNJLBG' , blockData ));
