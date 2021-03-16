@@ -10,7 +10,7 @@ _____________________________________________
 
 
 
-1. Initialize BlockChain
+1) Initialize BlockChain
 
 * Block Chain is a group of blocks.
 * Block is a group of transaction.
@@ -19,7 +19,7 @@ Every BlockChain will be initialized as Chain and pending Transactions
 
 
 
-2. Create A New Block Method
+2) Create A New Block Method
 
 * A block should have some properties
 	* Index
@@ -35,12 +35,12 @@ Every BlockChain will be initialized as Chain and pending Transactions
 
 
 
-3. Get Last Block Method
+3) Get Last Block Method
 * Return the last block in Chain
 
 
 
-4. Create A New Transaction Method
+4) Create A New Transaction Method
 
 * A Transaction have some attributes
 	* Sender
@@ -51,5 +51,5 @@ Every BlockChain will be initialized as Chain and pending Transactions
 * Return Block index in which transaction will reside
 
 
-5. Hash Block Method
+5) Hash Block Method
 
