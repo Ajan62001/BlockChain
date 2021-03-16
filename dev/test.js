@@ -1,13 +1,7 @@
- const Blockchain = require('./blockchain.js')
+ const BlockChain = require('./blockChain_Practice.js')
 
- const bitcoin = new Blockchain();
+ const bitcoin = new BlockChain();
 bitcoin.createNewBlock(1225,'dfjghadhjbkgbkbgh','hsdfjaghagjkdfgjkd');
-bitcoin.createNewBlock(1226,'dfjgfjghkghadhjbkgbkbgh','sdgfhdfjaghagjkdfgjkd');
-bitcoin.createNewBlock(1228,'dghfjghadhjbkgbkbgh','hsdfjaghahdggjkdfgjkd');
+bitcoin.createNewTransaction(100 , 'SDLFSFSJFDSJGSJLGJS0' , 'AJDOSAGJOAGJAJDGA');
 
-bitcoin.createNewTransaction(500,'NAMNNAkjfnfgjnsgdgfa','dbfmadsafddnnjf');
-bitcoin.createNewTransaction(1500,'NAMNNAkjfgsdgnfgjna','dbffasdmadsnnjf');
-bitcoin.createNewTransaction(5300,'NAMNNdfgdAkjfnfgjna','dbfmadsnnjfsdds');
-
-currentBlockData =  bitcoin.pendingTransactions
- console.log(bitcoin.proofOfWork('gfdhjkhdsgfdsjkgjksh' , currentBlockData));
+ console.log(bitcoin.pendingTransactions);
